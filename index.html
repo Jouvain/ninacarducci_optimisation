@@ -13,7 +13,7 @@
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.js" async ></script>
+	<script src="./assets/maugallery.js" defer ></script>
 	<script src="./assets/scripts.js" defer></script>
 </head>
 <body>
@@ -75,7 +75,7 @@
         </div>
         <section id="about">
             <div class="picture left">
-                <img src="./assets/images/nina.png" alt="portrait de Nina Carducci - femme aux teint halé et aux longs cheveux frisés, en salopette">
+                <img src="./assets/images/nina_small.png" alt="portrait de Nina Carducci - femme aux teint halé et aux longs cheveux frisés, en salopette">
             </div>
             <div id="about-me">
                 <h2 class="about-me__title">A propos de moi</h2>
@@ -88,15 +88,42 @@
             <h2 class="title">Portfolio</h2>
             <div class="container py-3">
                 <div class="gallery" style="display: none">
-                    <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="un dôme métallique surplombant une scene de concert aux lumières rouges, des mains levées au premier plan"/>
-                    <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="portrait d'un cadre en costume les bras croisés, l'air confiant et sûr de lui"/>
-                    <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="une employée assise souriant à quelqu'un hors-cadre"/>
-                    <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="gros plan sur les mains de fiancés tendues vers l'autre"/>
-                    <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="portrait d'un homme noir, habillé de noir, fermant les yeux face à la lumière, sur fond beige"/>
-                    <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="deux mariés de face (homme et femme) en tenue de mariage, le soir, s'avançant en riant et se regardant, un palmier en arrière-plan"/>
-                    <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg" alt="portrait d'une femme blanche habillée de noir, au visage encadré par ses cheveux et aux yeux cachés par un jeu de lumière sur ses lunettes, sur fond de ciel bleu et de grillage"/>
-                    <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="un chanteur de rock, la main levée, vu par dessous"/>
-                    <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="une employée assise devant son écran, riant ouvertement"/>
+                    <img
+                        srcset="./assets/images/gallery/concerts/concert_redLarge.jpg 2000w, ./assets/images/gallery/concerts/concert_redMedium.jpg 1000w, ./assets/images/gallery/concerts/concert_redSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg" alt="un dôme métallique surplombant une scene de concert aux lumières rouges, des mains levées au premier plan"/>
+                    <img 
+                        srcset="./assets/images/gallery/entreprise/pro_cadreLarge.jpg 2000w, ./assets/images/gallery/entreprise/pro_cadreMedium.jpg 1000w, ./assets/images/gallery/entreprise/pro_cadreSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" alt="portrait d'un cadre en costume les bras croisés, l'air confiant et sûr de lui"/>
+                    <img 
+                        srcset="./assets/images/gallery/entreprise/pro_smileLarge.jpg 2000w, ./assets/images/gallery/entreprise/pro_smileMedium.jpg 1000w, ./assets/images/gallery/entreprise/pro_smileSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg" alt="une employée assise souriant à quelqu'un hors-cadre"/>
+                    <img 
+                        srcset="./assets/images/gallery/mariage/marry_handsLarge.jpg 2000w, ./assets/images/gallery/mariage/marry_handsMedium.jpg 1000w, ./assets/images/gallery/mariage/marry_handsSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg" alt="gros plan sur les mains de fiancés tendues vers l'autre"/>
+                    <img 
+                        srcset="./assets/images/gallery/portraits/portrait_manLarge.jpg 2000w, ./assets/images/gallery/portraits/portrait_manMedium.jpgg 1000w, ./assets/images/gallery/portraits/portrait_manSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg" alt="portrait d'un homme noir, habillé de noir, fermant les yeux face à la lumière, sur fond beige"/>
+                    <img 
+                        srcset="./assets/images/gallery/mariage/marry_coupleLarge.jpg 2000w, ./assets/images/gallery/mariage/marry_coupleMedium.jpg 1000w, ./assets/images/gallery/mariage/marry_coupleSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt="deux mariés de face (homme et femme) en tenue de mariage, le soir, s'avançant en riant et se regardant, un palmier en arrière-plan"/>
+                    <img 
+                        srcset="./assets/images/gallery/portraits/portrait_womanLarge.jpg 2000w, ./assets/images/gallery/portraits/portrait_womanMedium.jpg 1000w, ./assets/images/gallery/portraits/portrait_womanSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg" alt="portrait d'une femme blanche habillée de noir, au visage encadré par ses cheveux et aux yeux cachés par un jeu de lumière sur ses lunettes, sur fond de ciel bleu et de grillage"/>
+                    <img 
+                        srcset="./assets/images/gallery/concerts/concert_singerLarge.jpg 2000w, ./assets/images/gallery/concerts/concert_singerMedium.jpg 1000w, ./assets/images/gallery/concerts/concert_singerSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt="un chanteur de rock, la main levée, vu par dessous"/>
+                    <img 
+                        srcset="./assets/images/gallery/entreprise/pro_banterLarge.jpg 2000w, ./assets/images/gallery/entreprise/pro_banterMedium.jpg 1000w, ./assets/images/gallery/entreprise/pro_banterSmall.jpg 500w "
+                        sizes="(max-width: 500px) 100vw, (max-width:1000px) 100vw, 100vw" 
+                        data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg" alt="une employée assise devant son écran, riant ouvertement"/>
                 </div>
             </div>
             <div class="quote">
@@ -171,7 +198,7 @@
                     </form>
                 </div>
                 <div class="picture right">
-                    <img src="./assets/images/camera.png">
+                    <img src="./assets/images/camera_small.png" alt="appareil photo aux arrêtes soulignées par un jeu d'ombre et de lumière">
                 </div>
             </div>
         </section>
