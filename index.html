@@ -6,15 +6,26 @@
     <meta name="robots" content="all">
     <meta name="description" content="Photographies professionnelles à la demande : portraits, mariages, évènements d'entreprise ou concerts. Shootings, retouches et albums faits avec passion.">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+    
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+    </noscript>
+	
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer ></script>
 	<script src="./assets/scripts.js" defer></script>
+
+    <!-- 
+    <link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    -->
+
 </head>
 <body>
     <header>
