@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Spectral";
+    src:url("Spectral/Spectral-Italic.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("Inter/static/Inter-Medium.ttf");
+    font-display: swap;
+}
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -90,9 +101,6 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
